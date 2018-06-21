@@ -687,11 +687,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Administrator\\source\\repos\\WebApplication3\\RequestSender\\RequestSender.csproj",
+      "projectUniqueName": "C:\\Users\\Administrator\\Documents\\GitHub\\MicrosoftProject2018\\WebApplication3\\RequestSender\\RequestSender.csproj",
       "projectName": "RequestSender",
-      "projectPath": "C:\\Users\\Administrator\\source\\repos\\WebApplication3\\RequestSender\\RequestSender.csproj",
+      "projectPath": "C:\\Users\\Administrator\\Documents\\GitHub\\MicrosoftProject2018\\WebApplication3\\RequestSender\\RequestSender.csproj",
       "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Administrator\\source\\repos\\WebApplication3\\RequestSender\\obj\\",
+      "outputPath": "C:\\Users\\Administrator\\Documents\\GitHub\\MicrosoftProject2018\\WebApplication3\\RequestSender\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
