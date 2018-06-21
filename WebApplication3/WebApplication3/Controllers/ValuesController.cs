@@ -24,7 +24,8 @@ namespace WebApplication3.Controllers
         {
             var rec = pro.Serializer(name, uni, year);
             byte[] result = rec.Data.ToArray();
-            return "done" + " " + System.Text.ASCIIEncoding.ASCII.GetString(result);
+            // return "done" + " " + System.Text.ASCIIEncoding.ASCII.GetString(result);
+            return "done";
         }
 
         // POST api/values
