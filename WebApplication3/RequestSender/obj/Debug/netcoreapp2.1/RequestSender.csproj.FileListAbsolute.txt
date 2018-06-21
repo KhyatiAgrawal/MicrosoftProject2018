@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 C:\Users\Administrator\Documents\GitHub\MicrosoftProject2018\WebApplication3\RequestSender\bin\Debug\netcoreapp2.1\RequestSender.deps.json
 C:\Users\Administrator\Documents\GitHub\MicrosoftProject2018\WebApplication3\RequestSender\bin\Debug\netcoreapp2.1\RequestSender.runtimeconfig.json
 C:\Users\Administrator\Documents\GitHub\MicrosoftProject2018\WebApplication3\RequestSender\bin\Debug\netcoreapp2.1\RequestSender.runtimeconfig.dev.json
@@ -9,3 +10,16 @@ C:\Users\Administrator\Documents\GitHub\MicrosoftProject2018\WebApplication3\Req
 C:\Users\Administrator\Documents\GitHub\MicrosoftProject2018\WebApplication3\RequestSender\obj\Debug\netcoreapp2.1\RequestSender.dll
 C:\Users\Administrator\Documents\GitHub\MicrosoftProject2018\WebApplication3\RequestSender\obj\Debug\netcoreapp2.1\RequestSender.pdb
 C:\Users\Administrator\Documents\GitHub\MicrosoftProject2018\WebApplication3\RequestSender\obj\Debug\netcoreapp2.1\RequestSender.csprojAssemblyReference.cache
+=======
+C:\Users\Administrator\Documents\GitHub\MicrosoftProject2018\WebApplication3\RequestSender\bin\Debug\netcoreapp2.1\RequestSender.deps.json
+C:\Users\Administrator\Documents\GitHub\MicrosoftProject2018\WebApplication3\RequestSender\bin\Debug\netcoreapp2.1\RequestSender.runtimeconfig.json
+C:\Users\Administrator\Documents\GitHub\MicrosoftProject2018\WebApplication3\RequestSender\bin\Debug\netcoreapp2.1\RequestSender.runtimeconfig.dev.json
+C:\Users\Administrator\Documents\GitHub\MicrosoftProject2018\WebApplication3\RequestSender\bin\Debug\netcoreapp2.1\RequestSender.dll
+C:\Users\Administrator\Documents\GitHub\MicrosoftProject2018\WebApplication3\RequestSender\bin\Debug\netcoreapp2.1\RequestSender.pdb
+C:\Users\Administrator\Documents\GitHub\MicrosoftProject2018\WebApplication3\RequestSender\obj\Debug\netcoreapp2.1\RequestSender.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Documents\GitHub\MicrosoftProject2018\WebApplication3\RequestSender\obj\Debug\netcoreapp2.1\RequestSender.AssemblyInfoInputs.cache
+C:\Users\Administrator\Documents\GitHub\MicrosoftProject2018\WebApplication3\RequestSender\obj\Debug\netcoreapp2.1\RequestSender.AssemblyInfo.cs
+C:\Users\Administrator\Documents\GitHub\MicrosoftProject2018\WebApplication3\RequestSender\obj\Debug\netcoreapp2.1\RequestSender.dll
+C:\Users\Administrator\Documents\GitHub\MicrosoftProject2018\WebApplication3\RequestSender\obj\Debug\netcoreapp2.1\RequestSender.pdb
+C:\Users\Administrator\Documents\GitHub\MicrosoftProject2018\WebApplication3\RequestSender\obj\Debug\netcoreapp2.1\RequestSender.csprojAssemblyReference.cache
+>>>>>>> 6beb72eca64caf23d06fc4a6e4ca72899ea47b71
