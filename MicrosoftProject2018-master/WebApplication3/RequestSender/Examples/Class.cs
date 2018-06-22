@@ -8,35 +8,38 @@
     using System;
 
     public class pro
-{
-    public static string Serializer(string name, string uni, double year)
     {
-        var src = new Record
+        public static string Serializer(string name, string uni, double year)
         {
-            Name = name,
-            University = uni,
-            GraduationY = year
-        };
+            var src = new Record
+            {
+                Name = name,
+                University = uni,
+                GraduationY = year
+            };
 
+            // Inspect the Record
+            Console.WriteLine(src.Name + " " + src.University + " " + src.GraduationY);
+            Console.ReadLine();
+            
+            //Serialize the Record into Json format
             var jsonString = new StringBuilder();
             var jsonWriter = new SimpleJsonWriter(new StringWriter(jsonString));
 
             Serialize.To(jsonWriter, src);
             jsonWriter.Flush();
-            Console.WriteLine(jsonString);
-            Console.ReadLine();
 
-            // The first calls to Serialize.To and Deserialize<T>.From can take
-            // a relatively long time because they generate the de/serializer
-            // for a given type and protocol.
-            //Serialize.To(writer, src);
+            //Return the serialized Record
+            return jsonString.ToString();
+        }
 
-            // var input = new InputBuffer(output.Data);
-            // var reader = new CompactBinaryReader<InputBuffer>(input);
+        public static Record Deserializer(string responseBody)
+        {
+            //Deserialize a Json string Record and return thedeserialized Record back
+            var reader = new SimpleJsonReader(new StringReader(responseBody));
+            var readRecord = Deserialize<Record>.From(reader);
 
-            // var dst = Deserialize<Record>.From(reader);
-
-        return jsonString.ToString();
+            return readRecord;
+        }
     }
-}
 }
