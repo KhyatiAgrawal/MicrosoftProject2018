@@ -33,13 +33,13 @@ namespace Examples
     [System.CodeDom.Compiler.GeneratedCode("gbc", "0.11.0.0")]
     public partial class Record
     {
-        [global::Bond.Id(10), global::Bond.Required]
+        [global::Bond.Id(10)]
         public string Name { get; set; }
 
-        [global::Bond.Id(20), global::Bond.Required]
+        [global::Bond.Id(20)]
         public string University { get; set; }
 
-        [global::Bond.Id(30), global::Bond.Required]
+        [global::Bond.Id(30)]
         public double GraduationY { get; set; }
 
         public Record()
