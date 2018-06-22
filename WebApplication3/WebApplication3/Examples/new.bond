@@ -1,8 +1,0 @@
-namespace Examples
-
-struct Record
-{
-  10: string Name;
-  20: string University;
-  30: double GraduationY;
-}
