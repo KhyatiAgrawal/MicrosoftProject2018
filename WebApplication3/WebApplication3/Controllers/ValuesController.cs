@@ -5,6 +5,8 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Examples;
 using System.Text;
+using System.Net.Http;
+using System.Net.Http.Headers;
 
 namespace WebApplication3.Controllers
 {
@@ -20,12 +22,31 @@ namespace WebApplication3.Controllers
 
         // GET api/values/5
         [HttpGet("{name}/{uni}/{year}")]
-        public string Get(string name, string uni, double year)
+        public async Task<string> Get(string name, string uni, double year)
         {
             var rec = pro.Serializer(name, uni, year);
             byte[] result = rec.Data.ToArray();
-            // return "done" + " " + System.Text.ASCIIEncoding.ASCII.GetString(result);
+            /* var client = new HttpClient();
+            client.DefaultRequestHeaders.Accept.Clear();
+            client.DefaultRequestHeaders.Accept.Add(
+                new MediaTypeWithQualityHeaderValue("application/bond"));
+
+            client.BaseAddress = new Uri("http://localhost:52513/");
+            var byteArrayContent = new ByteArrayContent(result);
+            byteArrayContent.Headers.ContentType = new MediaTypeHeaderValue("application/bond");
+            var res = await client.PostAsync("api/SomeData/Incoming", byteArrayContent);
+            res.EnsureSuccessStatusCode();*/
             return "done";
+        }
+
+        // GET api/values/5
+        [HttpGet("{str}")]
+        public string Get(string str)
+        {
+            if (str == "foo")
+                return "bar";
+            else
+                return "no bar";
         }
 
         // POST api/values
