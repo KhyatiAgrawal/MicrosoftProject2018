@@ -25,24 +25,14 @@ namespace WebApplication3.Controllers
 
         // GET api/values/5
         [HttpGet("{name}/{uni}/{year}")]
-        public async Task<byte[]> Get(string name, string uni, double year)
+        public string Get(string name, string uni, double year)
         {
             var rec = pro.Serializer(name, uni, year);
             byte[] result = rec.Data.ToArray();
-            /* var client = new HttpClient();
-            client.DefaultRequestHeaders.Accept.Clear();
-            client.DefaultRequestHeaders.Accept.Add(
-                new MediaTypeWithQualityHeaderValue("application/bond"));
-
-            client.BaseAddress = new Uri("http://localhost:52513/");
-            var byteArrayContent = new ByteArrayContent(result);
-            byteArrayContent.Headers.ContentType = new MediaTypeHeaderValue("application/bond");
-            var res = await client.PostAsync("api/SomeData/Incoming", byteArrayContent);
-            res.EnsureSuccessStatusCode();*/
-            return result;
+            return "done";
         }
 
-        // GET api/values/5
+        // GET api/values/somestring
         [HttpGet("{str}")]
         public string Get(string str)
         {
@@ -51,17 +41,25 @@ namespace WebApplication3.Controllers
             else
                 return "no bar";
                 */
+
+            // Convert string to json
             var reader = new SimpleJsonReader(new StringReader(str));
+
+            // Deserialize the json to record
             var readRecord = Deserialize<Record>.From(reader);
+    
+            // Change record
+            readRecord.Name = "Changed";
 
-            readRecord.Name = "change";
-
+            // Convert json back to string
             var jsonString = new StringBuilder();
             var jsonWriter = new SimpleJsonWriter(new StringWriter(jsonString));
 
+            //Reserialize
             Serialize.To(jsonWriter, readRecord);
             jsonWriter.Flush();
 
+            // Send response
             return jsonString.ToString();
         }
 
