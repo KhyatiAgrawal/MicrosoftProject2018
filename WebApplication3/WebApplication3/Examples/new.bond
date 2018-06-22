@@ -1,8 +1,0 @@
-namespace Examples
-
-struct Record
-{
-  10: required string Name;
-  20: required string University;
-  30: required double GraduationY;
-}
