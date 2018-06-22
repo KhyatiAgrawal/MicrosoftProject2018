@@ -1,0 +1,1 @@
+C:\Users\Administrator\source\repos\WebApplication3\WebApplication3\obj\Release\netcoreapp2.0\app1-Serializer.csproj.CoreCompileInputs.cache
