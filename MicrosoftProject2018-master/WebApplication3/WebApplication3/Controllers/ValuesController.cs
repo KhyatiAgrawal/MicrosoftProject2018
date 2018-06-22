@@ -29,7 +29,7 @@ namespace WebApplication3.Controllers
         {
             var rec = pro.Serializer(name, uni, year);
             byte[] result = rec.Data.ToArray();
-            return "done";
+            return "Ok";
         }
 
         // GET api/values/somestring
